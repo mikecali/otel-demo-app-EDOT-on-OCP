@@ -8,22 +8,6 @@ This guide demonstrates how to deploy and test the Elastic Distribution of OpenT
 
 ---
 
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Part 1: Install OpenTelemetry Operator](#part-1-install-opentelemetry-operator)
-- [Part 2: Deploy OpenTelemetry Demo Application](#part-2-deploy-opentelemetry-demo-application)
-- [Part 3: Configure Instrumentation](#part-3-configure-instrumentation)
-- [Part 4: Generate Realistic Traffic](#part-4-generate-realistic-traffic)
-- [Part 5: Verify Telemetry in Elastic Cloud](#part-5-verify-telemetry-in-elastic-cloud)
-- [Part 6: Advanced Testing](#part-6-advanced-testing)
-- [Troubleshooting](#troubleshooting)
-- [Fix Common Issues](#fix-common-otel-app-issues)
-- [Cleanup](#cleanup)
-- [Appendix](#appendix)
-
----
-
 ## Prerequisites
 
 ### Required Access
@@ -196,7 +180,7 @@ oc new-project otel-demo
 
 ### Step 2.3: Deploy Application
 
-Use the adjusted apps for OpenShift:
+Use the adjusted apps for OpenShift: https://github.com/mikecali/otel-demo-app-EDOT-on-OCP
 
 ```bash
 oc apply -f otel-demo-app.yaml
