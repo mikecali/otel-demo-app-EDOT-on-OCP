@@ -11,11 +11,11 @@ This guide demonstrates how to deploy and test the [Elastic Distribution of Open
 
 This guide uses the **upstream OpenTelemetry Operator** which is fully compatible with OpenShift and Elastic Cloud.
 
-**Prerequisites:** OpenShift 4.12+ cluster access with admin privileges
-
 ---
 
 ## Prerequisites
+
+**Prerequisites:** OpenShift 4.12+ cluster access with admin privileges
 
 ### Required Access
 
