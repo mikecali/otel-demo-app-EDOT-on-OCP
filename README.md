@@ -2,7 +2,14 @@
 
 ## Overview
 
-This guide demonstrates how to deploy and test the Elastic Distribution of OpenTelemetry (EDOT) on OpenShift using the official OpenTelemetry Demo application. You'll get 11+ microservices instrumented across multiple languages with automatic distributed tracing.
+This guide demonstrates how to deploy and test the [Elastic Distribution of OpenTelemetry (EDOT)](https://www.elastic.co/docs/reference/opentelemetry) on OpenShift using the official [OpenTelemetry Demo application](https://github.com/open-telemetry/opentelemetry-demo). You'll get 11+ microservices instrumented across multiple languages with automatic distributed tracing.
+
+### Platform Compatibility
+
+- ✅ **OpenShift 4.12+** - Supported with upstream OpenTelemetry Operator
+- ❌ **EDOT Collector** - Not officially supported on OpenShift ([see compatibility](https://www.elastic.co/docs/reference/opentelemetry/compatibility/collectors))
+
+This guide uses the **upstream OpenTelemetry Operator** which is fully compatible with OpenShift and Elastic Cloud.
 
 **Prerequisites:** OpenShift 4.12+ cluster access with admin privileges
 
