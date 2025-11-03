@@ -13,10 +13,10 @@ metadata:
   namespace: otel-demo
 spec:
   exporter:
-    endpoint: https://780d0b94411d4fe2bec55822f50e9ef9.apm.us-east-2.aws.elastic-cloud.com:443
+    endpoint: https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443
   env:
     - name: OTEL_EXPORTER_OTLP_HEADERS
-      value: "Authorization=Bearer xRGpJyN3SvBlNA0KQe"
+      value: "Authorization=Bearer xxxyyyyyzzzzzqqqqrrrss"
   propagators:
     - tracecontext
     - baggage
@@ -186,9 +186,9 @@ spec:
         - name: CURRENCY_SERVICE_PORT
           value: "8080"
         - name: OTEL_EXPORTER_OTLP_ENDPOINT
-          value: "https://780d0b94411d4fe2bec55822f50e9ef9.apm.us-east-2.aws.elastic-cloud.com:443"
+          value: "https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443"
         - name: OTEL_EXPORTER_OTLP_HEADERS
-          value: "Authorization=Bearer xRGpJyN3SvBlNA0KQe"
+          value: "Authorization=Bearer xxxyyyyyzzzzzqqqqrrrss"
         - name: OTEL_SERVICE_NAME
           value: "currencyservice"
         - name: OTEL_RESOURCE_ATTRIBUTES
@@ -230,9 +230,9 @@ spec:
         - name: EMAIL_SERVICE_PORT
           value: "8080"
         - name: OTEL_EXPORTER_OTLP_ENDPOINT
-          value: "https://780d0b94411d4fe2bec55822f50e9ef9.apm.us-east-2.aws.elastic-cloud.com:443"
+          value: "https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443"
         - name: OTEL_EXPORTER_OTLP_HEADERS
-          value: "Authorization=Bearer xRGpJyN3SvBlNA0KQe"
+          value: "Authorization=Bearer xxxyyyyyzzzzzqqqqrrrss"
         - name: OTEL_SERVICE_NAME
           value: "emailservice"
         - name: OTEL_RESOURCE_ATTRIBUTES
@@ -316,9 +316,9 @@ spec:
         - name: PRODUCT_CATALOG_SERVICE_PORT
           value: "8080"
         - name: OTEL_EXPORTER_OTLP_ENDPOINT
-          value: "https://780d0b94411d4fe2bec55822f50e9ef9.apm.us-east-2.aws.elastic-cloud.com:443"
+          value: "https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443"
         - name: OTEL_EXPORTER_OTLP_HEADERS
-          value: "Authorization=Bearer xRGpJyN3SvBlNA0KQe"
+          value: "Authorization=Bearer xxxyyyyyzzzzzqqqqrrrss"
         - name: OTEL_SERVICE_NAME
           value: "productcatalogservice"
         - name: OTEL_RESOURCE_ATTRIBUTES
@@ -406,9 +406,9 @@ spec:
         - name: QUOTE_SERVICE_PORT
           value: "8080"
         - name: OTEL_EXPORTER_OTLP_ENDPOINT
-          value: "https://780d0b94411d4fe2bec55822f50e9ef9.apm.us-east-2.aws.elastic-cloud.com:443"
+          value: "https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443"
         - name: OTEL_EXPORTER_OTLP_HEADERS
-          value: "Authorization=Bearer xRGpJyN3SvBlNA0KQe"
+          value: "Authorization=Bearer xxxyyyyyzzzzzqqqqrrrss"
         - name: OTEL_SERVICE_NAME
           value: "quoteservice"
         - name: OTEL_RESOURCE_ATTRIBUTES
@@ -454,9 +454,9 @@ spec:
         - name: QUOTE_SERVICE_ADDR
           value: "http://quoteservice:8080"
         - name: OTEL_EXPORTER_OTLP_ENDPOINT
-          value: "https://780d0b94411d4fe2bec55822f50e9ef9.apm.us-east-2.aws.elastic-cloud.com:443"
+          value: "https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443"
         - name: OTEL_EXPORTER_OTLP_HEADERS
-          value: "Authorization=Bearer xRGpJyN3SvBlNA0KQe"
+          value: "Authorization=Bearer xxxyyyyyzzzzzqqqqrrrss"
         - name: OTEL_SERVICE_NAME
           value: "shippingservice"
         - name: OTEL_RESOURCE_ATTRIBUTES
@@ -510,9 +510,9 @@ spec:
         - name: SHIPPING_SERVICE_ADDR
           value: "shippingservice:8080"
         - name: OTEL_EXPORTER_OTLP_ENDPOINT
-          value: "https://780d0b94411d4fe2bec55822f50e9ef9.apm.us-east-2.aws.elastic-cloud.com:443"
+          value: "https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443"
         - name: OTEL_EXPORTER_OTLP_HEADERS
-          value: "Authorization=Bearer xRGpJyN3SvBlNA0KQe"
+          value: "Authorization=Bearer xxxyyyyyzzzzzqqqqrrrss"
         - name: OTEL_SERVICE_NAME
           value: "checkoutservice"
         - name: OTEL_RESOURCE_ATTRIBUTES
@@ -568,9 +568,9 @@ spec:
         - name: SHIPPING_SERVICE_ADDR
           value: "shippingservice:8080"
         - name: OTEL_EXPORTER_OTLP_ENDPOINT
-          value: "https://780d0b94411d4fe2bec55822f50e9ef9.apm.us-east-2.aws.elastic-cloud.com:443"
+          value: "https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443"
         - name: OTEL_EXPORTER_OTLP_HEADERS
-          value: "Authorization=Bearer xRGpJyN3SvBlNA0KQe"
+          value: "Authorization=Bearer xxxyyyyyzzzzzqqqqrrrss"
         - name: OTEL_SERVICE_NAME
           value: "frontend"
         - name: OTEL_RESOURCE_ATTRIBUTES
