@@ -115,6 +115,7 @@ spec:
   ports:
   - port: 8080
 ---
+---
 # Cart Service (.NET) - Auto-instrumentation
 apiVersion: apps/v1
 kind: Deployment
@@ -139,7 +140,9 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: REDIS_ADDR
+        - name: VALKEY_ADDR  # Changed from REDIS_ADDR
+          value: "redis-cart:6379"
+        - name: REDIS_ADDR   # Keep for backward compatibility
           value: "redis-cart:6379"
         - name: CART_SERVICE_PORT
           value: "8080"
