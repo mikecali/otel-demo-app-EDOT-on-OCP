@@ -186,7 +186,7 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: CURRENCY_SERVICE_PORT
+        - name: CURRENCY_SERVICE
           value: "8080"
         - name: OTEL_EXPORTER_OTLP_ENDPOINT
           value: "https://your-elastic-endpoint.apm.us-east-2.aws.elastic-cloud.com:443"
